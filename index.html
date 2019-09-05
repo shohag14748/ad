@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .ad1 {
+            width: 300px;
+            height: 250px;
+            background: #e9e9e9;
+            overflow: hidden;
+            position: relative;
+            border: 1px solid #000;;
+        }
+        .slide1 .img1{
+            position: absolute;
+            width: 120%;
+            top: 0;
+            right: -10%;
+            animation: anime1 6s ease;
+/*            animation-iteration-count: infinite;*/
+        }
+        .slide1 .img2{
+            width: 120%;
+            height: 100%;
+        }
+
+        @keyframes anime1{
+            0%{right: 0;opacity: 0}
+            15%{right: -10%;opacity: 1}
+            30%{right: -10%;opacity: 1;transform: scale(1);}
+            45%{right: -10%;opacity: 0; transform: scale(4);}
+            100%{right: -10%;opacity: 0; transform: scale(4);}
+            
+        }
+        .text1{
+            position: absolute;
+            font-size: 35px;
+            top: 0px;
+            margin: 0;
+            padding: 20px;
+            color: #fff;
+            animation: anime2 6s ease;
+/*            animation-iteration-count: infinite;*/
+        }
+
+        @keyframes anime2{
+            0%{left: -30px;opacity: 0}
+            15%{left: -30px;opacity: 0}
+            30%{left: 0;opacity: 1}
+            100%{left: 0;opacity: 1}
+        }
+        .text2{
+            position: absolute;
+            font-size: 35px;
+            top: 40px;
+            margin: 0;
+            padding: 20px;
+            color: #fff;
+            animation: anime3 6s ease;
+/*            animation-iteration-count: infinite;*/
+        }
+        @keyframes anime3{
+            0%{left: -30px;opacity: 0}
+            45%{left: -30px;opacity: 0}
+            60%{left: 0;opacity: 1}
+            100%{left: 0;opacity: 1}
+        }
+        .button{
+            position: absolute;
+            display: block;
+            font-size: 18px;
+            bottom: 0px;
+            text-decoration: none;
+            color: #fff;
+            background: #f00;
+            font-weight: bold;
+            padding: 10px 20px;
+            margin: 20px 18px;
+            border-radius: 20px;
+            animation: anime4 6s ease;
+/*            animation-iteration-count: infinite;*/
+            width: 75%;
+            text-align: center;
+        }
+        @keyframes anime4{
+            0%{left: -30px;opacity: 0}
+            60%{left: -30px;opacity: 0}
+            75%{left: 0;opacity: 1}
+            100%{left: 0;opacity: 1}
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="ad1">
+        <div class="slide1">
+            <img class="img1" src="image/aerial%20single%20home%20google.png" alt="">
+            <img class="img2" src="image/Rose%20Bay%20Roof%20Top%20Inspection%20B.jpg" alt="">
+            <h2 class="text1">See the damage?</h2>
+            <h2 class="text2">Of course not.</h2>
+            <a href="" class="button">Schedule a Free Inspection</a>
+        </div>
+    </div>
+
+</body>
+
+</html>
