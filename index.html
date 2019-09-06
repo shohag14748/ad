@@ -1,110 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
+    
     <style>
-        .ad1 {
+    
+        .ad1{
             width: 300px;
             height: 250px;
             background: #e9e9e9;
+            border: 1px solid #000;
             overflow: hidden;
             position: relative;
-            border: 1px solid #000;;
         }
-        .slide1 .img1{
+        .img1{
+            height: 300px;
             position: absolute;
-            width: 120%;
-            top: 0;
-            right: -10%;
-            animation: anime1 6s ease;
-/*            animation-iteration-count: infinite;*/
+            z-index: 1;
+            left: 0px;
+            animation: ani1 3s ease;
+            animation-fill-mode: forwards;
         }
-        .slide1 .img2{
-            width: 120%;
-            height: 100%;
+        @keyframes ani1{
+            0%{left: -80px;opacity: 0}
+            50%{left: 0px;opacity: 1;transform: scale(1)}
+            100%{left: 110px;opacity: 1;transform: scale(2)}
         }
-
-        @keyframes anime1{
-            0%{right: 0;opacity: 0}
-            15%{right: -10%;opacity: 1}
-            30%{right: -10%;opacity: 1;transform: scale(1);}
-            45%{right: -10%;opacity: 0; transform: scale(4);}
-            100%{right: -10%;opacity: 0; transform: scale(4);}
-            
+        
+        .img2{
+            height: 300px;
+            position: absolute;
+            right: 0px;
+            z-index: 1;
+            opacity: 0;
+            animation: ani3 3s ease;
+            animation-fill-mode: forwards;
+            animation-delay: 4s;
+        }
+        @keyframes ani3{
+            0%{left: -200px;opacity: 0}
+            50%{left: -120px;opacity: 1;transform: scale(1)}
+            100%{left: -100px;opacity: 1;transform: scale(1.8)}
+        }
+        .highlight{
+            position: absolute;
+            z-index: 99;
+            width: 120px;
+            height: 120px;
+            overflow: hidden;
+            right: 15px;
+            opacity: 0;
+            transform: scale(0);
+            bottom: 55px;
+            border-radius: 50%;
+            border: 4px solid #fd5602;
+            border: 4px solid #fff;
+            box-shadow: 0px 0px 10px #fd5602;
+            box-shadow: 0px 0px 10px #fff;
+            animation: highlight 5s ease;
+            animation-delay: 2s;
+            animation-fill-mode: forwards;
+        }
+        @keyframes highlight{
+            0%{opacity: 1;transform: scale(0)}
+            20%{opacity: 1;transform: scale(1)}
+            40%{opacity: 1;transform: scale(1);right: 15px;bottom:55px}
+            70%{opacity: 1;transform: scale(.25);right: 80px;bottom:40px}
+            100%{opacity: 1;transform: scale(1);right: 22px;bottom:70px;}
+        }
+        .highlight .img3{
+            position: absolute;
+            width: 100%;
+            opacity: .3;
+            top: -20px;
+            left: 0;
+            transform:scale(.7);
+            animation: ani2 4s ease;
+            animation-fill-mode: forwards;
+            animation-delay: 2s;
+        }
+        
+        @keyframes ani2{
+            0%{opacity: .3}
+            50%{opacity: 1;transform: scale(1.5);top: -30px;left: 10px;}
+            100%{opacity: 0;transform: scale(1.5);top: -30px;left: 10px;}
+        }
+        .highlight .img4{
+            position: absolute;
+            height: 120px;
+            left: 0px;
+            opacity: 0;
+            transform:scale(1.5);
+            animation: ani4 4s ease;
+            animation-fill-mode: forwards;
+            animation-delay: 4s;
+        }
+        @keyframes ani4{
+            0%{left: -100px;opacity: 0;}
+            15%{left: -100px;opacity: 0;}
+            37.5%{left: -20px;opacity: 1;transform: scale(1.5);}
+            60%{left: -20px;opacity: 1;transform: scale(1.5);}
+            100%{left: -20px;opacity: 1;transform: scale(2)}
         }
         .text1{
             position: absolute;
-            font-size: 35px;
-            top: 0px;
-            margin: 0;
-            padding: 20px;
+            font-size: 30px;
+            margin: 10px 0;
+            padding: 2px 10px 2px 20px;
+            z-index: 99;
+            opacity: 0;
+            background: rgba(253, 86, 2, 0.6);
             color: #fff;
-            animation: anime2 6s ease;
-/*            animation-iteration-count: infinite;*/
+            animation: ani5 4s ease;
+            animation-delay: 1.5s;
+            animation-fill-mode: forwards;
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
         }
-
-        @keyframes anime2{
-            0%{left: -30px;opacity: 0}
-            15%{left: -30px;opacity: 0}
-            30%{left: 0;opacity: 1}
-            100%{left: 0;opacity: 1}
+        @keyframes ani5{
+            0%{left: -80px;opacity: 0}
+            33.33%{left: 0px;opacity: 1}
+            66.66%{left: 0px;opacity: 1}
+            100%{left: -80px;opacity: 0}
         }
         .text2{
-            position: absolute;
-            font-size: 35px;
-            top: 40px;
-            margin: 0;
-            padding: 20px;
             color: #fff;
-            animation: anime3 6s ease;
-/*            animation-iteration-count: infinite;*/
+            position: absolute;
+            font-size: 30px;
+            margin: 10px 0;
+            padding: 2px 10px 2px 20px;
+            z-index: 99;
+            opacity: 0;
+            background: rgba(253, 86, 2, 0.6);
+            animation: ani6 3s ease;
+            animation-fill-mode: forwards;
+            animation-delay: 5.5s;
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
         }
-        @keyframes anime3{
-            0%{left: -30px;opacity: 0}
-            45%{left: -30px;opacity: 0}
-            60%{left: 0;opacity: 1}
-            100%{left: 0;opacity: 1}
+        @keyframes ani6{
+            0%{left: -80px;opacity: 0}
+            50%{left: 0px;opacity: 1}
+            100%{left: -80px;opacity: 0}
         }
         .button{
             position: absolute;
-            display: block;
-            font-size: 18px;
-            bottom: 0px;
-            text-decoration: none;
+            z-index: 999;
+            bottom: 15px;
+            left: 10px;
+            opacity: 0;
+            padding: 8px 20px;
+            background: #ff8303;
+            border: 1px solid #fff;
+            border-radius: 30px;
             color: #fff;
-            background: #f00;
             font-weight: bold;
-            padding: 10px 20px;
-            margin: 20px 18px;
-            border-radius: 20px;
-            animation: anime4 6s ease;
-/*            animation-iteration-count: infinite;*/
-            width: 75%;
-            text-align: center;
+            font-size: 18px;
+            text-decoration: none;
+            box-shadow: 0px 2px 0px #fff;
+            animation: ani7 1.5s ease;
+            animation-fill-mode: forwards;
+            animation-delay: 7.5s;
+            text-shadow: 2px 2px 3px #999;
         }
-        @keyframes anime4{
-            0%{left: -30px;opacity: 0}
-            60%{left: -30px;opacity: 0}
-            75%{left: 0;opacity: 1}
-            100%{left: 0;opacity: 1}
+        @keyframes ani7{
+            0%{left: -80px;opacity: 0}
+            100%{left: 26px;opacity: 1}
         }
+        
     </style>
 </head>
-
 <body>
-
-    <div class="ad1">
-        <div class="slide1">
-            <img class="img1" src="image/aerial%20single%20home%20google.png" alt="">
-            <img class="img2" src="image/Rose%20Bay%20Roof%20Top%20Inspection%20B.jpg" alt="">
-            <h2 class="text1">See the damage?</h2>
-            <h2 class="text2">Of course not.</h2>
-            <a href="" class="button">Schedule a Free Inspection</a>
-        </div>
-    </div>
-
+   
+   
+   <div class="ad1">
+      
+      <div class="text">
+          <h2 class="text1">See the damage?</h2>
+          <h3 class="text2">Of course not.</h3>
+      </div>
+      <a href="" class="button">Schedule a Free Inspection</a>
+       <div class="highlight">
+           <img src="image/aerial-single-home-google.jpg" alt="" class="img3">
+           <img src="image/Rose-Bay-Roof-Top-Inspection-B.jpg" alt="" class="img4">
+       </div>
+       
+       
+       
+       <img src="image/subdivision-aerial-google-version.jpg" alt="" class="img1">
+       <img src="image/2d-front-of-home.jpg" alt="" class="img2">
+   </div>
+    
 </body>
-
 </html>
