@@ -92,20 +92,19 @@
         .highlight .highlightImg2{
             position: absolute;
             height: 120px;
-            left: -20px;
+            left: -40px;
             opacity: 0;
-            top: -10px;
+            top: 0px;
             transform:scale(1);
             animation: aniHighlightImg2 5s ease;
             animation-fill-mode: forwards;
             animation-delay: 5s;
         }
         @keyframes aniHighlightImg2{
-            0%{left: -20px;opacity: 0;}
-            15%{left: -20px;opacity: 0;transform:scale(1)}
-            37.5%{left: -20px;opacity: 1;transform: scale(1);}
-            60%{left: -20px;opacity: 1;}
-            100%{left: -20px;opacity: 1;transform: scale(2)}
+            0%{opacity: 0;}
+            15%{opacity: 0;transform:scale(1)}
+            37.5%{opacity: 1;transform: scale(1);top: -0px;}
+            100%{opacity: 1;transform: scale(1.8);top: -30px;}
         }
         
         .text1{
