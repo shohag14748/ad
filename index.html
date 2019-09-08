@@ -5,15 +5,12 @@
     <title>Document</title>
     
     <style>
+        /* general */
         .ad{
             background: #e9e9e9;
             border: 1px solid #000;
             overflow: hidden;
             position: relative;
-        }
-        .ad300x250{
-            width: 300px;
-            height: 250px;
         }
         .mainImg1{
             height: 300px;
@@ -176,9 +173,39 @@
             100%{left: 30px;opacity: 1}
         }
         
+        .copyright{
+            position: absolute;
+            z-index: 9999;
+            color: #fff;
+            bottom:0px;
+            margin: 0;
+            font-size: 10px;
+            right: 5px;
+            opacity: 0;
+            animation: copyright .7s ease;
+            animation-fill-mode: forwards;
+            animation-delay: 11.3s;
+        }
+        @keyframes copyright{
+            0%{opacity: 0}
+            100%{opacity: 1}
+        }
+        
+        /* ad 300x250 */
+        
+        .ad300x250{
+            width: 300px;
+            height: 250px;
+        }
+        
+        /* ad 30x50 and ad 320x50*/
         
         .ad320x50{
             width: 320px;
+            height: 50px;
+        }
+        .ad300x50{
+            width: 300px;
             height: 50px;
         }
         .ad300x50 .mainImg1,
@@ -261,7 +288,7 @@
         .ad320x50 .button,
         .ad300x50 .button{
             position: absolute;
-            bottom: 10px;
+            bottom: 15px;
             right: 10px;
             opacity: 0;
             z-index: 999999;
@@ -282,10 +309,7 @@
             100%{right: 10px;opacity: 1}
         }
         
-        .ad300x50{
-            width: 300px;
-            height: 50px;
-        }
+        /* ad 728x90 */
         
         .ad728x90{
             width: 728px;
@@ -383,6 +407,8 @@
             0%{right: -10px;opacity: 0}
             100%{right: 80px;opacity: 1}
         }
+        
+        /* ad 970x90 */
         .ad970x90{
             width: 970px;
             height: 90px;
@@ -478,6 +504,9 @@
             0%{right: 0px;opacity: 0}
             100%{right: 120px;opacity: 1}
         }
+        
+        /* ad 300x600 */
+        
         .ad300x600{
             width: 300px;
             height: 600px;
@@ -562,7 +591,7 @@
             width: 207px;
         }  
         
-        
+        /* ad 160x600 */
         
         .ad160x600{
             width: 160px;
@@ -666,17 +695,19 @@
             100%{left: 10px;opacity: 1}
         }
         
+        
     </style>
 </head>
 <body>
    
-   
+   <!-- ad 300x250 start -->
    <div class="ad ad300x250">
       <div class="text">
           <h2 class="text1">See the damage?</h2>
           <h3 class="text2">Of course not.</h3>
       </div>
       <a href="" class="button">Schedule a Free Inspection</a>
+      <p class="copyright">&copy; 2019 CRLLC #1331061</p>
        <div class="highlight">
            <img src="image/aerial-single-home-google.jpg" alt="" class="highlightImg1">
            <img src="image/Roofing-hail-damage-.jpg" alt="" class="highlightImg2">
@@ -684,14 +715,17 @@
        <img src="image/subdivision-aerial-google-version.jpg" alt="" class="mainImg1">
        <img src="image/2d-front-of-home.jpg" alt="" class="mainImg2">
    </div>
+   <!-- ad 300x250 end -->
     <br>
      <br>
+   <!-- ad 300x600 start -->
     <div class="ad ad300x600">
       <div class="text">
           <h2 class="text1">See the damage?</h2>
           <h3 class="text2">Of course not.</h3>
       </div>
       <a href="" class="button">Schedule a Free Inspection</a>
+      <p class="copyright">&copy; 2019 CRLLC #1331061</p>
        <div class="highlight">
            <img src="image/aerial-single-home-google.jpg" alt="" class="highlightImg1">
            <img src="image/Roofing-hail-damage-.jpg" alt="" class="highlightImg2">
@@ -699,14 +733,17 @@
        <img src="image/subdivision-aerial-google-version-2.jpg" alt="" class="mainImg1">
        <img src="image/2d-front-of-home.jpg" alt="" class="mainImg2">
     </div>
+   <!-- ad 300x600 end -->
      <br>
      <br>
+   <!-- ad 160x600 start -->
     <div class="ad ad160x600">
       <div class="text">
           <h2 class="text1">See the damage?</h2>
           <h3 class="text2">Of course not.</h3>
       </div>
       <a href="" class="button">Schedule a Free Inspection</a>
+      <p class="copyright">&copy; 2019 CRLLC #1331061</p>
        <div class="highlight">
            <img src="image/aerial-single-home-google.jpg" alt="" class="highlightImg1">
            <img src="image/Roofing-hail-damage-.jpg" alt="" class="highlightImg2">
@@ -714,14 +751,17 @@
        <img src="image/subdivision-aerial-google-version-2.jpg" alt="" class="mainImg1">
        <img src="image/2d-front-of-home.jpg" alt="" class="mainImg2">
     </div>
+   <!-- ad 160x600 end -->
      <br>
      <br>
+   <!-- ad 300x50 start -->
      <div class="ad ad300x50">
       <div class="text">
           <h2 class="text1">See the damage?</h2>
           <h3 class="text2">Of course not.</h3>
       </div>
       <a href="" class="button">Schedule a Free Inspection</a>
+      <p class="copyright">&copy; 2019 CRLLC #1331061</p>
        <div class="highlight">
            <img src="image/aerial-single-home-google.jpg" alt="" class="highlightImg1">
            <img src="image/Roofing-hail-damage-.jpg" alt="" class="highlightImg2">
@@ -729,14 +769,17 @@
        <img src="image/subdivision-aerial-google-version.jpg" alt="" class="mainImg1">
        <img src="image/2d-front-of-home.jpg" alt="" class="mainImg2">
     </div>
+   <!-- ad 300x50 end -->
      <br>
      <br>
+   <!-- ad 320x50 start -->
     <div class="ad ad320x50">
       <div class="text">
           <h2 class="text1">See the damage?</h2>
           <h3 class="text2">Of course not.</h3>
       </div>
       <a href="" class="button">Schedule a Free Inspection</a>
+      <p class="copyright">&copy; 2019 CRLLC #1331061</p>
        <div class="highlight">
            <img src="image/aerial-single-home-google.jpg" alt="" class="highlightImg1">
            <img src="image/Roofing-hail-damage-.jpg" alt="" class="highlightImg2">
@@ -744,14 +787,17 @@
        <img src="image/subdivision-aerial-google-version.jpg" alt="" class="mainImg1">
        <img src="image/2d-front-of-home.jpg" alt="" class="mainImg2">
     </div>
+   <!-- ad 320x50 end -->
      <br>
      <br>
+   <!-- ad 728x90 start -->
     <div class="ad ad728x90">
       <div class="text">
           <h2 class="text1">See the damage?</h2>
           <h3 class="text2">Of course not.</h3>
       </div>
       <a href="" class="button">Schedule a Free Inspection</a>
+      <p class="copyright">&copy; 2019 CRLLC #1331061</p>
        <div class="highlight">
            <img src="image/aerial-single-home-google.jpg" alt="" class="highlightImg1">
            <img src="image/Roofing-hail-damage-.jpg" alt="" class="highlightImg2">
@@ -759,14 +805,17 @@
        <img src="image/subdivision-aerial-google-version.jpg" alt="" class="mainImg1">
        <img src="image/2d-front-of-home.jpg" alt="" class="mainImg2">
     </div>
+   <!-- ad 728x90 end -->
      <br>
      <br>
+   <!-- ad 970x90 start -->
     <div class="ad ad970x90">
       <div class="text">
           <h2 class="text1">See the damage?</h2>
           <h3 class="text2">Of course not.</h3>
       </div>
       <a href="" class="button">Schedule a Free Inspection</a>
+      <p class="copyright">&copy; 2019 CRLLC #1331061</p>
        <div class="highlight">
            <img src="image/aerial-single-home-google.jpg" alt="" class="highlightImg1">
            <img src="image/Roofing-hail-damage-.jpg" alt="" class="highlightImg2">
@@ -774,6 +823,7 @@
        <img src="image/subdivision-aerial-google-version.jpg" alt="" class="mainImg1">
        <img src="image/2d-front-of-home.jpg" alt="" class="mainImg2">
     </div>
+   <!-- ad 970x90 end -->
      
     
 </body>
