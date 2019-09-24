@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Oswald|Paytone+One|Roboto+Condensed&display=swap" rel="stylesheet">
+    <style>
+        @font-face{
+            font-family: bb;
+            src: url(rraiderfont.ttf);
+            
+        }
+        .banner-wrapper{
+            background-image:url(home.png), linear-gradient(rgba(1,33,122,1),rgba(1,33,122,1));
+            background-repeat: no-repeat;
+            background-position: left center;
+            background-size: auto 100%;
+            display: flex;
+            align-items: flex-start;
+            overflow: hidden;
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+            box-sizing: border-box;
+            position: relative;
+            border: 1px solid #000;
+        }
+        .banner-wrapper img{
+            max-width: 220px;
+        }
+        .banner-wrapper .right-text{
+            width: 100%;
+        }
+        .banner-wrapper .right-text h1{
+            font-size: 50px;
+            font-family: 'Paytone One', sans-serif;
+            color: #fff;
+            text-align: center;
+            line-height: 50px;
+            font-weight: 500;
+            margin: 0px 0px 30px;
+        }
+        .banner-wrapper .right-text h1 span{
+            color: #ff7400;
+        }
+        .banner-wrapper .right-text p{
+            font-family: 'Roboto Condensed', sans-serif;
+            
+        }
+        .banner-wrapper .right-text hr{
+            width: 70%;
+            border: 1px solid #fff;
+            margin: 10px auto;
+        }
+        .banner-wrapper .right-text .steps{
+            display: flex;
+            margin: 30px 10px 30px 40px;
+        }
+        .banner-wrapper .right-text .steps span,
+        .banner-wrapper .right-text .steps a{
+            color: #ff7400;
+        }
+        .banner-wrapper .right-text .steps .singlesteps{
+            width: 33.33%;
+            display: flex;
+            align-items: flex-start;
+        }
+        .banner-wrapper .right-text .steps .singlesteps .number{
+            width: 65px;height: 65px;
+            border-radius: 50px;
+            display: block;
+            background: #fff;
+            color: #01217a;
+            text-align: center;
+            line-height: 60px;
+            font-size: 45px;
+            font-family: 'Paytone One', sans-serif;
+            margin-right: 10px;
+        }
+        .banner-wrapper .right-text .steps .singlesteps .text{
+            width: 65%;
+        }
+        .banner-wrapper .right-text .steps .singlesteps .text p{
+            color: #fff;
+            font-weight: 400;
+            font-size: 18px;
+            margin: 0px;
+            line-height: 30px;
+            letter-spacing: .4px;
+            font-family: Oswald;
+            text-transform: capitalize
+        }
+        .banner-wrapper .right-text .condition p{
+            text-align: center;
+            color: #fff;
+            margin: 0;
+        }
+        .websiteLink{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+        .websiteLink a{
+            font-family: Oswald;
+            background: #fff;
+            color: #01217a ;
+            padding: 5px 20px;
+            display: block;
+            text-decoration: none;
+        }
+    
+        @media only screen and (max-width: 991px) {
+            .banner-wrapper{ 
+               flex-flow: wrap;
+            }
+            .banner-wrapper img{
+                margin: 0px auto 20px; 
+            } 
+            .banner-wrapper .right-text .condition p{
+                margin-bottom: 20px;
+            }
+            
+        }
+        @media only screen and (max-width: 600px) {
+            .banner-wrapper .right-text .steps{
+                flex-flow: wrap;
+            }
+            .banner-wrapper .right-text .steps .singlesteps{
+                width: 100%;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+   
+   <div class="banner-wrapper">
+       <img src="Untitled-1.png" alt="">
+       <div class="right-text">
+           <h1>Earn Easy <span>$$$</span> With 1 Click Referrals</h1>
+           <hr>
+           <div class="steps">
+               <div class="singlesteps">
+                   <div class="number">1</div>
+                   <div class="text"><p>Visit the Calloway Roofing Referral page <a href=" https://CallowayRoofingFL.com ">Here</a></p></div>
+               </div>
+               <div class="singlesteps">
+                   <div class="number">2</div>
+                   <div class="text"><p><span>Share your Referral Link</span> on Social Media with 1 Click!</p></div>
+               </div>
+               <div class="singlesteps">
+                   <div class="number">3</div>
+                   <div class="text"><p>*Earn a <span>$50 referral Credit</span> for Each New Referral</p></div>
+               </div>
+           </div>
+           <div class="condition">
+               <p>*You will receive a $50 Visa Gift Card when the Referred Homeowner schedules and is present for the Free Roof Inspection and Free Consultation.</p>
+           </div>
+       </div>
+       <div class="websiteLink">
+           <a href="https://CallowayRoofingFL.com"> CallowayRoofingFL.com </a>
+       </div>
+   </div>
+    
+</body>
+</html>
