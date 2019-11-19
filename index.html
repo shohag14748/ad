@@ -1,21 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
-    
+    <title>See the damage</title>
+
     <style>
         /* general */
-        .ad-wrap{
-             display: inline-block;
+        .ad-wrap {
+            display: inline-block;
         }
-        .ad{
+
+        .ad {
             background: #e9e9e9;
             border: 1px solid #000;
             overflow: hidden;
             position: relative;
         }
-        .mainImg1{
+
+        .mainImg1 {
             height: 300px;
             position: absolute;
             z-index: 1;
@@ -23,13 +26,27 @@
             animation: aniMainImg1 3.5s ease;
             animation-fill-mode: forwards;
         }
-        @keyframes aniMainImg1{
-            0%{left: -80px;opacity: 0}
-            57%{left: 0px;opacity: 1;transform: scale(1)}
-            100%{left: 110px;opacity: 1;transform: scale(2)}
+
+        @keyframes aniMainImg1 {
+            0% {
+                left: -80px;
+                opacity: 0
+            }
+
+            57% {
+                left: 0px;
+                opacity: 1;
+                transform: scale(1)
+            }
+
+            100% {
+                left: 110px;
+                opacity: 1;
+                transform: scale(2)
+            }
         }
-        
-        .mainImg2{
+
+        .mainImg2 {
             height: 300px;
             position: absolute;
             right: 0px;
@@ -39,13 +56,33 @@
             animation-fill-mode: forwards;
             animation-delay: 4.5s;
         }
-        @keyframes aniMainImg2{
-            0%{left: -200px;opacity: 0}
-            42.8%{left: -120px;opacity: 1;transform: scale(1)}
-            57%{left: -120px;opacity: 1;transform: scale(1)}
-            100%{left: -100px;opacity: 1;transform: scale(1.8)}
+
+        @keyframes aniMainImg2 {
+            0% {
+                left: -200px;
+                opacity: 0
+            }
+
+            42.8% {
+                left: -120px;
+                opacity: 1;
+                transform: scale(1)
+            }
+
+            57% {
+                left: -120px;
+                opacity: 1;
+                transform: scale(1)
+            }
+
+            100% {
+                left: -100px;
+                opacity: 1;
+                transform: scale(1.8)
+            }
         }
-        .highlight{
+
+        .highlight {
             position: absolute;
             z-index: 99;
             width: 120px;
@@ -62,52 +99,126 @@
             animation-delay: 2.5s;
             animation-fill-mode: forwards;
         }
-        @keyframes highlight{
-            0%{opacity: 1;transform: scale(0)}
-            16.66%{opacity: 1;transform: scale(1)}
-            33.33%{opacity: 1;transform: scale(1);right: 15px;bottom:55px}
-            50%{opacity: 1;transform: scale(.25);right: 80px;bottom:40px}
-            66.66%{opacity: 1;transform: scale(.25);right: 80px;bottom:40px}
-            92%{opacity: 1;transform: scale(1);right: 32px;bottom:70px;}
-            100%{opacity: 1;transform: scale(1);right: 32px;bottom:70px;}
+
+        @keyframes highlight {
+            0% {
+                opacity: 1;
+                transform: scale(0)
+            }
+
+            16.66% {
+                opacity: 1;
+                transform: scale(1)
+            }
+
+            33.33% {
+                opacity: 1;
+                transform: scale(1);
+                right: 15px;
+                bottom: 55px
+            }
+
+            50% {
+                opacity: 1;
+                transform: scale(.25);
+                right: 80px;
+                bottom: 40px
+            }
+
+            66.66% {
+                opacity: 1;
+                transform: scale(.25);
+                right: 80px;
+                bottom: 40px
+            }
+
+            92% {
+                opacity: 1;
+                transform: scale(1);
+                right: 32px;
+                bottom: 70px;
+            }
+
+            100% {
+                opacity: 1;
+                transform: scale(1);
+                right: 32px;
+                bottom: 70px;
+            }
         }
-        .highlight .highlightImg1{
+
+        .highlight .highlightImg1 {
             position: absolute;
             width: 100%;
             opacity: .3;
             top: 0px;
             left: -2px;
-            transform:scale(.7);
+            transform: scale(.7);
             animation: aniHighlightImg1 4.5s ease;
             animation-fill-mode: forwards;
             animation-delay: 2.5s;
         }
-        
-        @keyframes aniHighlightImg1{
-            0%{opacity: .3}
-            44.44%{opacity: 1;transform: scale(1.5);left: 0px;}
-            50%{opacity: 1;transform: scale(1.5);left: 0px;}
-            100%{opacity: 0;transform: scale(1.5);left: -2px;}
+
+        @keyframes aniHighlightImg1 {
+            0% {
+                opacity: .3
+            }
+
+            44.44% {
+                opacity: 1;
+                transform: scale(1.5);
+                left: 0px;
+            }
+
+            50% {
+                opacity: 1;
+                transform: scale(1.5);
+                left: 0px;
+            }
+
+            100% {
+                opacity: 0;
+                transform: scale(1.5);
+                left: -2px;
+            }
         }
-        .highlight .highlightImg2{
+
+        .highlight .highlightImg2 {
             position: absolute;
             height: 120px;
             left: -40px;
             opacity: 0;
             top: 0px;
-            transform:scale(1);
+            transform: scale(1);
             animation: aniHighlightImg2 5s ease;
             animation-fill-mode: forwards;
             animation-delay: 5s;
         }
-        @keyframes aniHighlightImg2{
-            0%{opacity: 0;}
-            15%{opacity: 0;transform:scale(1)}
-            37.5%{opacity: 1;transform: scale(1);top: -0px;}
-            100%{opacity: 1;transform: scale(1.8);top: -30px;}
+
+        @keyframes aniHighlightImg2 {
+            0% {
+                opacity: 0;
+            }
+
+            15% {
+                opacity: 0;
+                transform: scale(1)
+            }
+
+            37.5% {
+                opacity: 1;
+                transform: scale(1);
+                top: -0px;
+            }
+
+            100% {
+                opacity: 1;
+                transform: scale(1.8);
+                top: -30px;
+            }
         }
-        
-        .text1{
+
+        .text1 {
             position: absolute;
             font-size: 30px;
             margin: 10px 0;
@@ -122,13 +233,30 @@
             border-top-right-radius: 20px;
             border-bottom-right-radius: 20px;
         }
-        @keyframes aniText1{
-            0%{left: -80px;opacity: 0}
-            33.33%{left: 0px;opacity: 1}
-            66.66%{left: 0px;opacity: 1}
-            100%{left: -80px;opacity: 0}
+
+        @keyframes aniText1 {
+            0% {
+                left: -80px;
+                opacity: 0
+            }
+
+            33.33% {
+                left: 0px;
+                opacity: 1
+            }
+
+            66.66% {
+                left: 0px;
+                opacity: 1
+            }
+
+            100% {
+                left: -80px;
+                opacity: 0
+            }
         }
-        .text2{
+
+        .text2 {
             color: #fff;
             position: absolute;
             font-size: 30px;
@@ -143,13 +271,30 @@
             border-top-right-radius: 20px;
             border-bottom-right-radius: 20px;
         }
-        @keyframes aniText2{
-            0%{left: -80px;opacity: 0}
-            37.5%{left: 0px;opacity: 1}
-            62.5%{left: 0px;opacity: 1}
-            100%{left: -80px;opacity: 0}
+
+        @keyframes aniText2 {
+            0% {
+                left: -80px;
+                opacity: 0
+            }
+
+            37.5% {
+                left: 0px;
+                opacity: 1
+            }
+
+            62.5% {
+                left: 0px;
+                opacity: 1
+            }
+
+            100% {
+                left: -80px;
+                opacity: 0
+            }
         }
-        .button{
+
+        .button {
             position: absolute;
             z-index: 999;
             bottom: 15px;
@@ -171,16 +316,24 @@
             text-shadow: 2px 2px 3px #999;
             width: 207px;
         }
-        @keyframes aniButton{
-            0%{left: -80px;opacity: 0}
-            100%{left: 30px;opacity: 1}
+
+        @keyframes aniButton {
+            0% {
+                left: -80px;
+                opacity: 0
+            }
+
+            100% {
+                left: 30px;
+                opacity: 1
+            }
         }
-        
-        .copyright{
+
+        .copyright {
             position: absolute;
             z-index: 9999;
             color: #fff;
-            bottom:0px;
+            bottom: 0px;
             margin: 0;
             font-size: 10px;
             right: 5px;
@@ -189,43 +342,68 @@
             animation-fill-mode: forwards;
             animation-delay: 11.3s;
         }
-        @keyframes copyright{
-            0%{opacity: 0}
-            100%{opacity: 1}
+
+        @keyframes copyright {
+            0% {
+                opacity: 0
+            }
+
+            100% {
+                opacity: 1
+            }
         }
-        
+
         /* ad 300x250 */
-        
-        .ad300x250{
+
+        .ad300x250 {
             width: 300px;
             height: 250px;
         }
-        
+
         /* ad 30x50 and ad 320x50*/
-        
-        .ad320x50{
+
+        .ad320x50 {
             width: 320px;
             height: 50px;
         }
-        .ad300x50{
+
+        .ad300x50 {
             width: 300px;
             height: 50px;
         }
+
         .ad300x50 .mainImg1,
-        .ad320x50 .mainImg1{
+        .ad320x50 .mainImg1 {
             height: 200px;
             left: -50px;
             top: -70px;
             animation: ani320x50mainImg1 3.5s ease;
             animation-fill-mode: forwards;
         }
-        @keyframes ani320x50mainImg1{
-            0%{left: -80px;opacity: 0}
-            57%{left: -30px;opacity: 1;transform: scale(1);top: -70px;}
-            100%{left: -30px;opacity: 1;transform: scale(1.5);top: -62.4px;}
+
+        @keyframes ani320x50mainImg1 {
+            0% {
+                left: -80px;
+                opacity: 0
+            }
+
+            57% {
+                left: -30px;
+                opacity: 1;
+                transform: scale(1);
+                top: -70px;
+            }
+
+            100% {
+                left: -30px;
+                opacity: 1;
+                transform: scale(1.5);
+                top: -62.4px;
+            }
         }
+
         .ad300x50 .highlight,
-        .ad320x50 .highlight{
+        .ad320x50 .highlight {
             width: 44px;
             height: 44px;
             left: 60px;
@@ -235,32 +413,93 @@
             animation-delay: 2.5s;
             animation-fill-mode: forwards;
         }
-        @keyframes ani320x50highlight{
-            0%{opacity: 1;transform: scale(0)}
-            16.66%{opacity: 1;transform: scale(1);left: 50px;bottom: 1px;}
-            33.33%{opacity: 1;transform: scale(1);left: 50px;bottom:1px}
-            56%{opacity: 1;transform: scale(.25);left: 148px;bottom:1px}
-            66.66%{opacity: 1;transform: scale(.25);left: 148px;bottom:1px}
-            92%{opacity: 1;transform: scale(1);left: 45px;bottom:1px;}
-            100%{opacity: 1;transform: scale(1);left: 45px;bottom:1px;}
+
+        @keyframes ani320x50highlight {
+            0% {
+                opacity: 1;
+                transform: scale(0)
+            }
+
+            16.66% {
+                opacity: 1;
+                transform: scale(1);
+                left: 50px;
+                bottom: 1px;
+            }
+
+            33.33% {
+                opacity: 1;
+                transform: scale(1);
+                left: 50px;
+                bottom: 1px
+            }
+
+            56% {
+                opacity: 1;
+                transform: scale(.25);
+                left: 148px;
+                bottom: 1px
+            }
+
+            66.66% {
+                opacity: 1;
+                transform: scale(.25);
+                left: 148px;
+                bottom: 1px
+            }
+
+            92% {
+                opacity: 1;
+                transform: scale(1);
+                left: 45px;
+                bottom: 1px;
+            }
+
+            100% {
+                opacity: 1;
+                transform: scale(1);
+                left: 45px;
+                bottom: 1px;
+            }
         }
+
         .ad300x50 .mainImg2,
-        .ad320x50 .mainImg2{
+        .ad320x50 .mainImg2 {
             height: 200px;
             top: -70px;
             animation: ani320x50mainImg2 3.5s ease;
             animation-fill-mode: forwards;
             animation-delay: 4.5s;
         }
-        @keyframes ani320x50mainImg2{
-            0%{left: -80px;opacity: 0}
-            42.8%{left: -10px;opacity: 1;transform: scale(1)}
-            57%{left: -10px;opacity: 1;transform: scale(1)}
-            100%{left: -120px;top: -70px;opacity: 1;transform: scale(1.8);}
+
+        @keyframes ani320x50mainImg2 {
+            0% {
+                left: -80px;
+                opacity: 0
+            }
+
+            42.8% {
+                left: -10px;
+                opacity: 1;
+                transform: scale(1)
+            }
+
+            57% {
+                left: -10px;
+                opacity: 1;
+                transform: scale(1)
+            }
+
+            100% {
+                left: -120px;
+                top: -70px;
+                opacity: 1;
+                transform: scale(1.8);
+            }
         }
-        
+
         .ad300x50 .text1,
-        .ad320x50 .text1{
+        .ad320x50 .text1 {
             font-size: 22px;
             animation: ani320x50text 4.5s ease;
             animation-delay: 1.5s;
@@ -270,14 +509,31 @@
             border-bottom-left-radius: 20px;
             border-bottom-right-radius: 0px;
         }
-        @keyframes ani320x50text{
-            0%{right: -80px;opacity: 0}
-            33.33%{right: 0px;opacity: 1}
-            66.66%{right: 0px;opacity: 1}
-            100%{right: -80px;opacity: 0}
+
+        @keyframes ani320x50text {
+            0% {
+                right: -80px;
+                opacity: 0
+            }
+
+            33.33% {
+                right: 0px;
+                opacity: 1
+            }
+
+            66.66% {
+                right: 0px;
+                opacity: 1
+            }
+
+            100% {
+                right: -80px;
+                opacity: 0
+            }
         }
+
         .ad300x50 .text2,
-        .ad320x50 .text2{
+        .ad320x50 .text2 {
             font-size: 22px;
             animation: ani320x50text 4.5s ease;
             animation-fill-mode: forwards;
@@ -287,9 +543,9 @@
             border-bottom-left-radius: 20px;
             border-bottom-right-radius: 0px;
         }
-        
+
         .ad320x50 .button,
-        .ad300x50 .button{
+        .ad300x50 .button {
             position: absolute;
             bottom: 15px;
             right: 10px;
@@ -305,33 +561,58 @@
             display: inline-block;
             width: 162px;
             text-align: center;
-            
+
         }
-        @keyframes ani320x50button{
-            0%{right: -80px;opacity: 0}
-            100%{right: 10px;opacity: 1}
+
+        @keyframes ani320x50button {
+            0% {
+                right: -80px;
+                opacity: 0
+            }
+
+            100% {
+                right: 10px;
+                opacity: 1
+            }
         }
-        
+
         /* ad 728x90 */
-        
-        .ad728x90{
+
+        .ad728x90 {
             width: 728px;
             height: 90px;
         }
-        
-        .ad728x90 .mainImg1{
+
+        .ad728x90 .mainImg1 {
             height: 420px;
             left: -50px;
             top: -150px;
             animation: ani728x90mainImg1 3.5s ease;
             animation-fill-mode: forwards;
         }
-        @keyframes ani728x90mainImg1{
-            0%{left: -80px;opacity: 0}
-            57%{left: -30px;opacity: 1;transform: scale(1);top: -150px;}
-            100%{left: -30px;opacity: 1;transform: scale(1.4);top: -150px;}
+
+        @keyframes ani728x90mainImg1 {
+            0% {
+                left: -80px;
+                opacity: 0
+            }
+
+            57% {
+                left: -30px;
+                opacity: 1;
+                transform: scale(1);
+                top: -150px;
+            }
+
+            100% {
+                left: -30px;
+                opacity: 1;
+                transform: scale(1.4);
+                top: -150px;
+            }
         }
-        .ad728x90 .highlight{
+
+        .ad728x90 .highlight {
             width: 82px;
             height: 82px;
             left: 165px;
@@ -341,30 +622,91 @@
             animation-delay: 2.5s;
             animation-fill-mode: forwards;
         }
-        @keyframes ani728x90highlight{
-            0%{opacity: 1;transform: scale(0)}
-            16.66%{opacity: 1;transform: scale(1);left: 165px;bottom: 2px;}
-            33.33%{opacity: 1;transform: scale(1);left: 165px;bottom:2px}
-            55%{opacity: 1;transform: scale(.25);left: 368px;bottom:2px}
-            66.66%{opacity: 1;transform: scale(.25);left: 368px;bottom:2px}
-            92%{opacity: 1;transform: scale(1);left: 185px;bottom:2px;}
-            100%{opacity: 1;transform: scale(1);left: 185px;bottom:2px;}
+
+        @keyframes ani728x90highlight {
+            0% {
+                opacity: 1;
+                transform: scale(0)
+            }
+
+            16.66% {
+                opacity: 1;
+                transform: scale(1);
+                left: 165px;
+                bottom: 2px;
+            }
+
+            33.33% {
+                opacity: 1;
+                transform: scale(1);
+                left: 165px;
+                bottom: 2px
+            }
+
+            55% {
+                opacity: 1;
+                transform: scale(.25);
+                left: 368px;
+                bottom: 2px
+            }
+
+            66.66% {
+                opacity: 1;
+                transform: scale(.25);
+                left: 368px;
+                bottom: 2px
+            }
+
+            92% {
+                opacity: 1;
+                transform: scale(1);
+                left: 185px;
+                bottom: 2px;
+            }
+
+            100% {
+                opacity: 1;
+                transform: scale(1);
+                left: 185px;
+                bottom: 2px;
+            }
         }
-        .ad728x90 .mainImg2{
+
+        .ad728x90 .mainImg2 {
             height: 450px;
             top: -170px;
             animation: ani728x90mainImg2 3.5s ease;
             animation-fill-mode: forwards;
             animation-delay: 4.5s;
         }
-        @keyframes ani728x90mainImg2{
-            0%{left: -70px;opacity: 0}
-            42.8%{left: 0px;opacity: 1;transform: scale(1)}
-            57%{left: 0px;opacity: 1;transform: scale(1)}
-            100%{left: -200px;top: -170px;opacity: 1;transform: scale(1.6);}
+
+        @keyframes ani728x90mainImg2 {
+            0% {
+                left: -70px;
+                opacity: 0
+            }
+
+            42.8% {
+                left: 0px;
+                opacity: 1;
+                transform: scale(1)
+            }
+
+            57% {
+                left: 0px;
+                opacity: 1;
+                transform: scale(1)
+            }
+
+            100% {
+                left: -200px;
+                top: -170px;
+                opacity: 1;
+                transform: scale(1.6);
+            }
         }
-        
-        .ad728x90 .text1{
+
+        .ad728x90 .text1 {
             margin: 23px 0;
             padding: 5px 80px 5px 20px;
             font-size: 30px;
@@ -376,7 +718,8 @@
             border-bottom-left-radius: 20px;
             border-bottom-right-radius: 0px;
         }
-        .ad728x90 .text2{
+
+        .ad728x90 .text2 {
             margin: 23px 0;
             padding: 5px 80px 5px 20px;
             font-size: 30px;
@@ -388,8 +731,8 @@
             border-bottom-left-radius: 20px;
             border-bottom-right-radius: 0px;
         }
-        
-        .ad728x90 .button{
+
+        .ad728x90 .button {
             position: absolute;
             bottom: 28px;
             right: 10px;
@@ -404,32 +747,57 @@
             text-shadow: 2px 2px 3px #999;
             display: inline-block;
             width: 230px;
-            
+
         }
-        @keyframes ani728x90button{
-            0%{right: -10px;opacity: 0}
-            100%{right: 80px;opacity: 1}
+
+        @keyframes ani728x90button {
+            0% {
+                right: -10px;
+                opacity: 0
+            }
+
+            100% {
+                right: 80px;
+                opacity: 1
+            }
         }
-        
+
         /* ad 970x90 */
-        .ad970x90{
+        .ad970x90 {
             width: 970px;
             height: 90px;
         }
-        .ad970x90 .mainImg1{
+
+        .ad970x90 .mainImg1 {
             height: 535px;
             left: -50px;
             top: -200px;
             animation: ani970x90mainImg1 3.5s ease;
             animation-fill-mode: forwards;
         }
-        @keyframes ani970x90mainImg1{
-            0%{left: -80px;opacity: 0}
-            57%{left: -30px;opacity: 1;transform: scale(1);top: -200px;}
-            100%{left: -30px;opacity: 1;transform: scale(1.2);top: -200px;}
+
+        @keyframes ani970x90mainImg1 {
+            0% {
+                left: -80px;
+                opacity: 0
+            }
+
+            57% {
+                left: -30px;
+                opacity: 1;
+                transform: scale(1);
+                top: -200px;
+            }
+
+            100% {
+                left: -30px;
+                opacity: 1;
+                transform: scale(1.2);
+                top: -200px;
+            }
         }
-        
-        .ad970x90 .highlight{
+
+        .ad970x90 .highlight {
             width: 82px;
             height: 82px;
             left: 260px;
@@ -439,29 +807,91 @@
             animation-delay: 2.5s;
             animation-fill-mode: forwards;
         }
-        @keyframes ani970x90highlight{
-            0%{opacity: 1;transform: scale(0)}
-            16.66%{opacity: 1;transform: scale(1);left: 250px;bottom: 2px;}
-            33.33%{opacity: 1;transform: scale(1);left: 250px;bottom:2px}
-            54%{opacity: 1;transform: scale(.25);left: 488px;bottom:2px}
-            66.66%{opacity: 1;transform: scale(.25);left: 488px;bottom:2px}
-            92%{opacity: 1;transform: scale(1);left: 295px;bottom:2px;}
-            100%{opacity: 1;transform: scale(1);left: 295px;bottom:2px;}
+
+        @keyframes ani970x90highlight {
+            0% {
+                opacity: 1;
+                transform: scale(0)
+            }
+
+            16.66% {
+                opacity: 1;
+                transform: scale(1);
+                left: 250px;
+                bottom: 2px;
+            }
+
+            33.33% {
+                opacity: 1;
+                transform: scale(1);
+                left: 250px;
+                bottom: 2px
+            }
+
+            54% {
+                opacity: 1;
+                transform: scale(.25);
+                left: 488px;
+                bottom: 2px
+            }
+
+            66.66% {
+                opacity: 1;
+                transform: scale(.25);
+                left: 488px;
+                bottom: 2px
+            }
+
+            92% {
+                opacity: 1;
+                transform: scale(1);
+                left: 295px;
+                bottom: 2px;
+            }
+
+            100% {
+                opacity: 1;
+                transform: scale(1);
+                left: 295px;
+                bottom: 2px;
+            }
         }
-         .ad970x90 .mainImg2{
+
+        .ad970x90 .mainImg2 {
             height: 580px;
             top: -250px;
             animation: ani970x90mainImg2 3.5s ease;
             animation-fill-mode: forwards;
             animation-delay: 4.5s;
         }
-        @keyframes ani970x90mainImg2{
-            0%{left: -70px;opacity: 0}
-            42.8%{left: 0px;opacity: 1;transform: scale(1)}
-            57%{left: 0px;opacity: 1;transform: scale(1)}
-            100%{left: -210px;top: -230px;opacity: 1;transform: scale(1.45);}
+
+        @keyframes ani970x90mainImg2 {
+            0% {
+                left: -70px;
+                opacity: 0
+            }
+
+            42.8% {
+                left: 0px;
+                opacity: 1;
+                transform: scale(1)
+            }
+
+            57% {
+                left: 0px;
+                opacity: 1;
+                transform: scale(1)
+            }
+
+            100% {
+                left: -210px;
+                top: -230px;
+                opacity: 1;
+                transform: scale(1.45);
+            }
         }
-        .ad970x90 .text1{
+
+        .ad970x90 .text1 {
             margin: 23px 0;
             padding: 5px 100px 5px 20px;
             font-size: 30px;
@@ -473,7 +903,8 @@
             border-bottom-left-radius: 20px;
             border-bottom-right-radius: 0px;
         }
-        .ad970x90 .text2{
+
+        .ad970x90 .text2 {
             margin: 23px 0;
             padding: 5px 100px 5px 20px;
             font-size: 30px;
@@ -485,8 +916,8 @@
             border-bottom-left-radius: 20px;
             border-bottom-right-radius: 0px;
         }
-        
-        .ad970x90 .button{
+
+        .ad970x90 .button {
             position: absolute;
             bottom: 28px;
             right: 10px;
@@ -501,20 +932,29 @@
             text-shadow: 2px 2px 3px #999;
             display: inline-block;
             width: 230px;
-            
+
         }
-        @keyframes ani970x90button{
-            0%{right: 0px;opacity: 0}
-            100%{right: 120px;opacity: 1}
+
+        @keyframes ani970x90button {
+            0% {
+                right: 0px;
+                opacity: 0
+            }
+
+            100% {
+                right: 120px;
+                opacity: 1
+            }
         }
-        
+
         /* ad 300x600 */
-        
-        .ad300x600{
+
+        .ad300x600 {
             width: 300px;
             height: 600px;
         }
-        .ad300x600 .mainImg1{
+
+        .ad300x600 .mainImg1 {
             height: 700px;
             width: auto;
             position: absolute;
@@ -522,13 +962,27 @@
             animation: ani300x600mainImg1 3.5s ease;
             animation-fill-mode: forwards;
         }
-        @keyframes ani300x600mainImg1{
-            0%{left: -80px;opacity: 0}
-            57%{left: -30px;opacity: 1;transform: scale(1);}
-            100%{left: -30px;opacity: 1;transform: scale(1.4);}
+
+        @keyframes ani300x600mainImg1 {
+            0% {
+                left: -80px;
+                opacity: 0
+            }
+
+            57% {
+                left: -30px;
+                opacity: 1;
+                transform: scale(1);
+            }
+
+            100% {
+                left: -30px;
+                opacity: 1;
+                transform: scale(1.4);
+            }
         }
-        
-        .ad300x600 .highlight{
+
+        .ad300x600 .highlight {
             position: absolute;
             z-index: 99;
             width: 120px;
@@ -545,63 +999,137 @@
             animation-delay: 2.5s;
             animation-fill-mode: forwards;
         }
-        @keyframes ani300x600highlight{
-            0%{opacity: 1;transform: scale(0)}
-            16.66%{opacity: 1;transform: scale(1);top: 135px;}
-            33.33%{opacity: 1;transform: scale(1);top: 135px;right: 70px;}
-            50%{opacity: 1;transform: scale(.25);top: 230px;right: 20px;}
-            66.66%{opacity: 1;transform: scale(.25);top: 230px;right: 20px;}
-            92%{opacity: 1;transform: scale(1);top: 225px;right: 60px;}
-            100%{opacity: 1;transform: scale(1);top: 225px;right: 60px;}
+
+        @keyframes ani300x600highlight {
+            0% {
+                opacity: 1;
+                transform: scale(0)
+            }
+
+            16.66% {
+                opacity: 1;
+                transform: scale(1);
+                top: 135px;
+            }
+
+            33.33% {
+                opacity: 1;
+                transform: scale(1);
+                top: 135px;
+                right: 70px;
+            }
+
+            50% {
+                opacity: 1;
+                transform: scale(.25);
+                top: 230px;
+                right: 20px;
+            }
+
+            66.66% {
+                opacity: 1;
+                transform: scale(.25);
+                top: 230px;
+                right: 20px;
+            }
+
+            92% {
+                opacity: 1;
+                transform: scale(1);
+                top: 225px;
+                right: 60px;
+            }
+
+            100% {
+                opacity: 1;
+                transform: scale(1);
+                top: 225px;
+                right: 60px;
+            }
         }
-         .ad300x600 .mainImg2{
+
+        .ad300x600 .mainImg2 {
             height: 600px;
             left: -400px;
             animation: ani300x600mainImg2 3.5s ease;
             animation-fill-mode: forwards;
             animation-delay: 4.5s;
         }
-        @keyframes ani300x600mainImg2{
-            0%{left: -400px;opacity: 0}
-            42.8%{left: -330px;opacity: 1;transform: scale(1)}
-            57%{left: -330px;opacity: 1;transform: scale(1)}
-            100%{left: -390px;;opacity: 1;transform: scale(1.45);}
+
+        @keyframes ani300x600mainImg2 {
+            0% {
+                left: -400px;
+                opacity: 0
+            }
+
+            42.8% {
+                left: -330px;
+                opacity: 1;
+                transform: scale(1)
+            }
+
+            57% {
+                left: -330px;
+                opacity: 1;
+                transform: scale(1)
+            }
+
+            100% {
+                left: -390px;
+                ;
+                opacity: 1;
+                transform: scale(1.45);
+            }
         }
-        
-        .ad300x600 .highlightImg1{
+
+        .ad300x600 .highlightImg1 {
             position: absolute;
             width: 100%;
             opacity: .3;
             top: 0px;
             left: 5px;
-            transform:scale(.7) rotate(90deg);
+            transform: scale(.7) rotate(90deg);
             animation: ani300x600highlightImg1 4.5s ease;
             animation-fill-mode: forwards;
             animation-delay: 2.5s;
         }
-        @keyframes ani300x600highlightImg1{
-            0%{opacity: .3}
-            44.44%{opacity: 1;transform: scale(1.5) rotate(90deg);top: 0px;}
-            100%{opacity: 0;transform: scale(1.5) rotate(90deg);top: -5px;}
+
+        @keyframes ani300x600highlightImg1 {
+            0% {
+                opacity: .3
+            }
+
+            44.44% {
+                opacity: 1;
+                transform: scale(1.5) rotate(90deg);
+                top: 0px;
+            }
+
+            100% {
+                opacity: 0;
+                transform: scale(1.5) rotate(90deg);
+                top: -5px;
+            }
         }
-        
+
         .ad300x600 .text1,
-        .ad300x600 .text2{
+        .ad300x600 .text2 {
             margin: 50px 0;
         }
-        .ad300x600 .button{
-            bottom: 50px;  
+
+        .ad300x600 .button {
+            bottom: 50px;
             width: 207px;
-        }  
-        
+        }
+
         /* ad 160x600 */
-        
-        .ad160x600{
+
+        .ad160x600 {
             width: 160px;
             height: 600px;
         }
-        
-        .ad160x600 .mainImg1{
+
+        .ad160x600 .mainImg1 {
             height: 700px;
             width: auto;
             position: absolute;
@@ -610,13 +1138,29 @@
             animation: ani160x600mainImg1 3.5s ease;
             animation-fill-mode: forwards;
         }
-        @keyframes ani160x600mainImg1{
-            0%{left: -180px;opacity: 0}
-            57%{left: -120px;opacity: 1;transform: scale(1);top: 0px;}
-            100%{left: -120px;opacity: 1;transform: scale(1.4);top: 10px;}
+
+        @keyframes ani160x600mainImg1 {
+            0% {
+                left: -180px;
+                opacity: 0
+            }
+
+            57% {
+                left: -120px;
+                opacity: 1;
+                transform: scale(1);
+                top: 0px;
+            }
+
+            100% {
+                left: -120px;
+                opacity: 1;
+                transform: scale(1.4);
+                top: 10px;
+            }
         }
-        
-        .ad160x600 .highlight{
+
+        .ad160x600 .highlight {
             position: absolute;
             z-index: 99;
             width: 120px;
@@ -633,55 +1177,129 @@
             animation-delay: 2.5s;
             animation-fill-mode: forwards;
         }
-        @keyframes ani160x600highlight{
-            0%{opacity: 1;transform: scale(0)}
-            16.66%{opacity: 1;transform: scale(1);top: 145px;}
-            33.33%{opacity: 1;transform: scale(1);top: 145px;right: 17px;}
-            50%{opacity: 1;transform: scale(.25);top: 230px;right: 0px;}
-            66.66%{opacity: 1;transform: scale(.25);top: 230px;right: 0px;}
-            92%{opacity: 1;transform: scale(1);top: 225px;right: 10px;}
-            100%{opacity: 1;transform: scale(1);top: 225px;right: 10px;}
+
+        @keyframes ani160x600highlight {
+            0% {
+                opacity: 1;
+                transform: scale(0)
+            }
+
+            16.66% {
+                opacity: 1;
+                transform: scale(1);
+                top: 145px;
+            }
+
+            33.33% {
+                opacity: 1;
+                transform: scale(1);
+                top: 145px;
+                right: 17px;
+            }
+
+            50% {
+                opacity: 1;
+                transform: scale(.25);
+                top: 230px;
+                right: 0px;
+            }
+
+            66.66% {
+                opacity: 1;
+                transform: scale(.25);
+                top: 230px;
+                right: 0px;
+            }
+
+            92% {
+                opacity: 1;
+                transform: scale(1);
+                top: 225px;
+                right: 10px;
+            }
+
+            100% {
+                opacity: 1;
+                transform: scale(1);
+                top: 225px;
+                right: 10px;
+            }
         }
-         .ad160x600 .mainImg2{
+
+        .ad160x600 .mainImg2 {
             height: 600px;
             left: -400px;
             animation: ani160x600mainImg2 3.5s ease;
             animation-fill-mode: forwards;
             animation-delay: 4.5s;
         }
-        @keyframes ani160x600mainImg2{
-            0%{left: -400px;opacity: 0}
-            42.8%{left: -450px;opacity: 1;transform: scale(1)}
-            57%{left: -450px;opacity: 1;transform: scale(1)}
-            100%{left: -480px;;opacity: 1;transform: scale(1.45);}
+
+        @keyframes ani160x600mainImg2 {
+            0% {
+                left: -400px;
+                opacity: 0
+            }
+
+            42.8% {
+                left: -450px;
+                opacity: 1;
+                transform: scale(1)
+            }
+
+            57% {
+                left: -450px;
+                opacity: 1;
+                transform: scale(1)
+            }
+
+            100% {
+                left: -480px;
+                ;
+                opacity: 1;
+                transform: scale(1.45);
+            }
         }
-        
-        .ad160x600 .highlightImg1{
+
+        .ad160x600 .highlightImg1 {
             position: absolute;
             width: 100%;
             opacity: .3;
             top: 0px;
             left: 5px;
-            transform:scale(.7) rotate(90deg);
+            transform: scale(.7) rotate(90deg);
             animation: ani160x600highlightImg1 4.5s ease;
             animation-fill-mode: forwards;
             animation-delay: 2.5s;
         }
-        @keyframes ani160x600highlightImg1{
-            0%{opacity: .3}
-            44.44%{opacity: 1;transform: scale(1.5) rotate(90deg);top: 0px;}
-            100%{opacity: 0;transform: scale(1.5) rotate(90deg);top: -5px;}
+
+        @keyframes ani160x600highlightImg1 {
+            0% {
+                opacity: .3
+            }
+
+            44.44% {
+                opacity: 1;
+                transform: scale(1.5) rotate(90deg);
+                top: 0px;
+            }
+
+            100% {
+                opacity: 0;
+                transform: scale(1.5) rotate(90deg);
+                top: -5px;
+            }
         }
-        
-        
+
+
         .ad160x600 .text1,
-        .ad160x600 .text2{
+        .ad160x600 .text2 {
             margin: 50px 0;
-             padding: 5px 10px 5px 15px;
+            padding: 5px 10px 5px 15px;
             width: 150px;
             box-sizing: border-box;
         }
-        .ad160x600 .button{
+
+        .ad160x600 .button {
             bottom: 50px;
             width: 140px;
             box-sizing: border-box;
@@ -691,157 +1309,167 @@
             animation: ani160x300button 1.5s ease;
             animation-fill-mode: forwards;
             animation-delay: 9.5s;
-            
+
         }
-        @keyframes ani160x300button{
-            0%{left: -80px;opacity: 0}
-            100%{left: 10px;opacity: 1}
+
+        @keyframes ani160x300button {
+            0% {
+                left: -80px;
+                opacity: 0
+            }
+
+            100% {
+                left: 10px;
+                opacity: 1
+            }
         }
-        
+
         
     </style>
 </head>
+
 <body>
-   
-   <!-- ad 300x250 start -->
-   <a href="https://callowayroofingfl.com/?utm_source=geo7-19-19&utm_medium=mobile&utm_campaign=OcWgWdmr" class="ad-wrap">
-   <div class="ad ad300x250">
-      <div class="text">
-          <h2 class="text1">See the damage?</h2>
-          <h3 class="text2">Of course not.</h3>
-      </div>
-      <div class="button">Schedule a Free Inspection</div>
-      <p class="copyright">&copy; 2019 CRLLC #1331061</p>
-       <div class="highlight">
-           <img src="image/aerial-single-home-google.jpg" alt="" class="highlightImg1">
-           <img src="image/Roofing-hail-damage-.jpg" alt="" class="highlightImg2">
-       </div>
-       <img src="image/subdivision-aerial-google-version.jpg" alt="" class="mainImg1">
-       <img src="image/2d-front-of-home.jpg" alt="" class="mainImg2">
-   </div>
-   </a>
-   <!-- ad 300x250 end -->
+
+    <!-- ad 300x250 start -->
+    <a href="300x250/index.html" class="ad-wrap">
+        <div class="ad ad300x250">
+            <div class="text">
+                <h2 class="text1">See the damage?</h2>
+                <h3 class="text2">Of course not.</h3>
+            </div>
+            <div class="button">Schedule a Free Inspection</div>
+            <p class="copyright">&copy; 2019 Crllc CCC1331061</p>
+            <div class="highlight">
+                <img src="image/aerial-single-home-google.jpg" alt="" class="highlightImg1">
+                <img src="image/Roofing-hail-damage-.jpg" alt="" class="highlightImg2">
+            </div>
+            <img src="image/subdivision-aerial-google-version.jpg" alt="" class="mainImg1">
+            <img src="image/2d-front-of-home.jpg" alt="" class="mainImg2">
+        </div>
+    </a>
+    <!-- ad 300x250 end -->
     <br>
-     <br>
-   <!-- ad 300x600 start -->
-   <a href="https://callowayroofingfl.com/?utm_source=geo7-19-19&utm_medium=mobile&utm_campaign=OcWgWdmr" class="ad-wrap">
-    <div class="ad ad300x600">
-      <div class="text">
-          <h2 class="text1">See the damage?</h2>
-          <h3 class="text2">Of course not.</h3>
-      </div>
-      <div class="button">Schedule a Free Inspection</div>
-      <p class="copyright">&copy; 2019 CRLLC #1331061</p>
-       <div class="highlight">
-           <img src="image/aerial-single-home-google.jpg" alt="" class="highlightImg1">
-           <img src="image/Roofing-hail-damage-.jpg" alt="" class="highlightImg2">
-       </div>
-       <img src="image/subdivision-aerial-google-version-2.jpg" alt="" class="mainImg1">
-       <img src="image/2d-front-of-home.jpg" alt="" class="mainImg2">
-    </div>
+    <br>
+    <!-- ad 300x600 start -->
+    <a href="300x600/index.html" class="ad-wrap">
+        <div class="ad ad300x600">
+            <div class="text">
+                <h2 class="text1">See the damage?</h2>
+                <h3 class="text2">Of course not.</h3>
+            </div>
+            <div class="button">Schedule a Free Inspection</div>
+            <p class="copyright">&copy; 2019 Crllc CCC1331061</p>
+            <div class="highlight">
+                <img src="image/aerial-single-home-google.jpg" alt="" class="highlightImg1">
+                <img src="image/Roofing-hail-damage-.jpg" alt="" class="highlightImg2">
+            </div>
+            <img src="image/subdivision-aerial-google-version-2.jpg" alt="" class="mainImg1">
+            <img src="image/2d-front-of-home.jpg" alt="" class="mainImg2">
+        </div>
     </a>
-   <!-- ad 300x600 end -->
-     <br>
-     <br>
-   <!-- ad 160x600 start -->
-   <a href="https://callowayroofingfl.com/?utm_source=geo7-19-19&utm_medium=mobile&utm_campaign=OcWgWdmr" class="ad-wrap">
-    <div class="ad ad160x600">
-      <div class="text">
-          <h2 class="text1">See the damage?</h2>
-          <h3 class="text2">Of course not.</h3>
-      </div>
-      <div class="button">Schedule a Free Inspection</div>
-      <p class="copyright">&copy; 2019 CRLLC #1331061</p>
-       <div class="highlight">
-           <img src="image/aerial-single-home-google.jpg" alt="" class="highlightImg1">
-           <img src="image/Roofing-hail-damage-.jpg" alt="" class="highlightImg2">
-       </div>
-       <img src="image/subdivision-aerial-google-version-2.jpg" alt="" class="mainImg1">
-       <img src="image/2d-front-of-home.jpg" alt="" class="mainImg2">
-    </div>
+    <!-- ad 300x600 end -->
+    <br>
+    <br>
+    <!-- ad 160x600 start -->
+    <a href="160x600/index.html" class="ad-wrap">
+        <div class="ad ad160x600">
+            <div class="text">
+                <h2 class="text1">See the damage?</h2>
+                <h3 class="text2">Of course not.</h3>
+            </div>
+            <div class="button">Schedule a Free Inspection</div>
+            <p class="copyright">&copy; 2019 Crllc CCC1331061</p>
+            <div class="highlight">
+                <img src="image/aerial-single-home-google.jpg" alt="" class="highlightImg1">
+                <img src="image/Roofing-hail-damage-.jpg" alt="" class="highlightImg2">
+            </div>
+            <img src="image/subdivision-aerial-google-version-2.jpg" alt="" class="mainImg1">
+            <img src="image/2d-front-of-home.jpg" alt="" class="mainImg2">
+        </div>
     </a>
-   <!-- ad 160x600 end -->
-     <br>
-     <br>
-   <!-- ad 300x50 start -->
-   <a href="https://callowayroofingfl.com/?utm_source=geo7-19-19&utm_medium=mobile&utm_campaign=OcWgWdmr" class="ad-wrap">
-     <div class="ad ad300x50">
-      <div class="text">
-          <h2 class="text1">See the damage?</h2>
-          <h3 class="text2">Of course not.</h3>
-      </div>
-      <div class="button">Schedule a Free Inspection</div>
-      <p class="copyright">&copy; 2019 CRLLC #1331061</p>
-       <div class="highlight">
-           <img src="image/aerial-single-home-google.jpg" alt="" class="highlightImg1">
-           <img src="image/Roofing-hail-damage-.jpg" alt="" class="highlightImg2">
-       </div>
-       <img src="image/subdivision-aerial-google-version.jpg" alt="" class="mainImg1">
-       <img src="image/2d-front-of-home.jpg" alt="" class="mainImg2">
-    </div>
-       </a>
-   <!-- ad 300x50 end -->
-     <br>
-     <br>
-   <!-- ad 320x50 start -->
-   <a href="https://callowayroofingfl.com/?utm_source=geo7-19-19&utm_medium=mobile&utm_campaign=OcWgWdmr" class="ad-wrap">
-    <div class="ad ad320x50">
-      <div class="text">
-          <h2 class="text1">See the damage?</h2>
-          <h3 class="text2">Of course not.</h3>
-      </div>
-      <div class="button">Schedule a Free Inspection</div>
-      <p class="copyright">&copy; 2019 CRLLC #1331061</p>
-       <div class="highlight">
-           <img src="image/aerial-single-home-google.jpg" alt="" class="highlightImg1">
-           <img src="image/Roofing-hail-damage-.jpg" alt="" class="highlightImg2">
-       </div>
-       <img src="image/subdivision-aerial-google-version.jpg" alt="" class="mainImg1">
-       <img src="image/2d-front-of-home.jpg" alt="" class="mainImg2">
-    </div>
-       </a>
-   <!-- ad 320x50 end -->
-     <br>
-     <br>
-   <!-- ad 728x90 start -->
-   <a href="https://callowayroofingfl.com/?utm_source=geo7-19-19&utm_medium=mobile&utm_campaign=OcWgWdmr" class="ad-wrap">
-    <div class="ad ad728x90">
-      <div class="text">
-          <h2 class="text1">See the damage?</h2>
-          <h3 class="text2">Of course not.</h3>
-      </div>
-      <div class="button">Schedule a Free Inspection</div>
-      <p class="copyright">&copy; 2019 CRLLC #1331061</p>
-       <div class="highlight">
-           <img src="image/aerial-single-home-google.jpg" alt="" class="highlightImg1">
-           <img src="image/Roofing-hail-damage-.jpg" alt="" class="highlightImg2">
-       </div>
-       <img src="image/subdivision-aerial-google-version.jpg" alt="" class="mainImg1">
-       <img src="image/2d-front-of-home.jpg" alt="" class="mainImg2">
-    </div>
-       </a>
-   <!-- ad 728x90 end -->
-     <br>
-     <br>
-   <!-- ad 970x90 start -->
-   <a href="https://callowayroofingfl.com/?utm_source=geo7-19-19&utm_medium=mobile&utm_campaign=OcWgWdmr" class="ad-wrap">
-    <div class="ad ad970x90">
-      <div class="text">
-          <h2 class="text1">See the damage?</h2>
-          <h3 class="text2">Of course not.</h3>
-      </div>
-      <div class="button">Schedule a Free Inspection</div>
-      <p class="copyright">&copy; 2019 CRLLC #1331061</p>
-       <div class="highlight">
-           <img src="image/aerial-single-home-google.jpg" alt="" class="highlightImg1">
-           <img src="image/Roofing-hail-damage-.jpg" alt="" class="highlightImg2">
-       </div>
-       <img src="image/subdivision-aerial-google-version.jpg" alt="" class="mainImg1">
-       <img src="image/2d-front-of-home.jpg" alt="" class="mainImg2">
-    </div>
-       </a>
-   <!-- ad 970x90 end -->
-     
-    
+    <!-- ad 160x600 end -->
+    <br>
+    <br>
+    <!-- ad 300x50 start -->
+    <a href="300x50/index.html" class="ad-wrap">
+        <div class="ad ad300x50">
+            <div class="text">
+                <h2 class="text1">See the damage?</h2>
+                <h3 class="text2">Of course not.</h3>
+            </div>
+            <div class="button">Schedule a Free Inspection</div>
+            <p class="copyright">&copy; 2019 Crllc CCC1331061</p>
+            <div class="highlight">
+                <img src="image/aerial-single-home-google.jpg" alt="" class="highlightImg1">
+                <img src="image/Roofing-hail-damage-.jpg" alt="" class="highlightImg2">
+            </div>
+            <img src="image/subdivision-aerial-google-version.jpg" alt="" class="mainImg1">
+            <img src="image/2d-front-of-home.jpg" alt="" class="mainImg2">
+        </div>
+    </a>
+    <!-- ad 300x50 end -->
+    <br>
+    <br>
+    <!-- ad 320x50 start -->
+    <a href="320x50/index.html" class="ad-wrap">
+        <div class="ad ad320x50">
+            <div class="text">
+                <h2 class="text1">See the damage?</h2>
+                <h3 class="text2">Of course not.</h3>
+            </div>
+            <div class="button">Schedule a Free Inspection</div>
+            <p class="copyright">&copy; 2019 Crllc CCC1331061</p>
+            <div class="highlight">
+                <img src="image/aerial-single-home-google.jpg" alt="" class="highlightImg1">
+                <img src="image/Roofing-hail-damage-.jpg" alt="" class="highlightImg2">
+            </div>
+            <img src="image/subdivision-aerial-google-version.jpg" alt="" class="mainImg1">
+            <img src="image/2d-front-of-home.jpg" alt="" class="mainImg2">
+        </div>
+    </a>
+    <!-- ad 320x50 end -->
+    <br>
+    <br>
+    <!-- ad 728x90 start -->
+    <a href="728x90/index.html" class="ad-wrap">
+        <div class="ad ad728x90">
+            <div class="text">
+                <h2 class="text1">See the damage?</h2>
+                <h3 class="text2">Of course not.</h3>
+            </div>
+            <div class="button">Schedule a Free Inspection</div>
+            <p class="copyright">&copy; 2019 Crllc CCC1331061</p>
+            <div class="highlight">
+                <img src="image/aerial-single-home-google.jpg" alt="" class="highlightImg1">
+                <img src="image/Roofing-hail-damage-.jpg" alt="" class="highlightImg2">
+            </div>
+            <img src="image/subdivision-aerial-google-version.jpg" alt="" class="mainImg1">
+            <img src="image/2d-front-of-home.jpg" alt="" class="mainImg2">
+        </div>
+    </a>
+    <!-- ad 728x90 end -->
+    <br>
+    <br>
+    <!-- ad 970x90 start -->
+    <a href="970x90/index.html" class="ad-wrap">
+        <div class="ad ad970x90">
+            <div class="text">
+                <h2 class="text1">See the damage?</h2>
+                <h3 class="text2">Of course not.</h3>
+            </div>
+            <div class="button">Schedule a Free Inspection</div>
+            <p class="copyright">&copy; 2019 Crllc CCC1331061</p>
+            <div class="highlight">
+                <img src="image/aerial-single-home-google.jpg" alt="" class="highlightImg1">
+                <img src="image/Roofing-hail-damage-.jpg" alt="" class="highlightImg2">
+            </div>
+            <img src="image/subdivision-aerial-google-version.jpg" alt="" class="mainImg1">
+            <img src="image/2d-front-of-home.jpg" alt="" class="mainImg2">
+        </div>
+    </a>
+    <!-- ad 970x90 end -->
+
+
 </body>
+
 </html>
